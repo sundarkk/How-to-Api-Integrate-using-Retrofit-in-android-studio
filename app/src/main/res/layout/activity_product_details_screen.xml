@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/light_sky_blue" />
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:rotation="180"
+            android:src="@drawable/next_fade_icon" />
+
+        <ImageView
+            android:id="@+id/rem"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_name_icon" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_toLeftOf="@+id/filter"
+            android:src="@drawable/filter_icon"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:src="@drawable/new_cart"
+            app:tint="@color/light_black" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nesteScroll_productDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/more_layout"
+        android:layout_below="@+id/top_bar_layout"
+        tools:ignore="NotSibling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.sundar.shopping.custom_classes.MyTv
+                    android:id="@+id/tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/rent_designer_sharara"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="@string/appfontBold"
+                    android:textStyle="bold" />
+
+
+                <com.sundar.shopping.custom_classes.MyTv
+                    android:id="@+id/sub_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tittle"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/dark_green_embroided_sharara"
+                    android:textColor="@color/light_black"
+                    app:fontName="@string/appfontRegular"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/products_image_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub_tittle"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <com.kingfisher.easyviewindicator.RecyclerViewIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/products_image_recyclerview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:avi_animation_enable="true"
+                    app:avi_drawable="@drawable/blue_baseline_horizontal_rule_24"
+                    app:avi_drawable_unselected="@drawable/white_baseline_horizontal_rule_24"
+                    app:avi_height="@dimen/_20sdp"
+                    app:avi_width="@dimen/_20sdp" />
+                <!--
+                            android:layout_alignBottom="@+id/products_image_recyclerview"
+                -->
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/details_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indicator"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/sharara_impress_pitara"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/share_icon"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_below="@+id/indicator"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_toLeftOf="@+id/whishlist_icon"
+                    android:src="@drawable/share_icon"
+                    app:tint="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/whishlist_icon"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_below="@+id/indicator"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/wishlist_black_icon" />
+
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/first_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_tittle"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/exat_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/second_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_tittle"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/first_price"
+                    android:foreground="@drawable/striking_text"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/off_amount"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_tittle"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/second_price"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/offer"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <!--Quantity added data-->
+
+                <LinearLayout
+                    android:id="@+id/text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_price"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.sundar.shopping.custom_classes.CustomTextViewBold
+                            android:id="@+id/quantity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/first_price"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:text="@string/quantity"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <ImageView
+                                android:id="@+id/decrement"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/decrement" />
+
+                            <com.sundar.shopping.custom_classes.CustomTextViewBold
+                                android:id="@+id/text_quantity"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/light_black_icon_bg"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlCompat" />
+
+                            <ImageView
+                                android:id="@+id/increment"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/increment" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.sundar.shopping.custom_classes.CustomTextViewBold
+                            android:id="@+id/s_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/first_price"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:text="@string/sizes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+
+                                <com.sundar.shopping.custom_classes.CustomTextViewRegular
+                                    android:id="@+id/text_size"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/mm"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:visibility="visible" />
+
+                                <Spinner
+                                    android:id="@+id/size_spinner"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/text_size"
+                                    android:drawSelectorOnTop="false"
+                                    android:prompt="@string/select_size"
+                                    android:spinnerMode="dropdown" />
+                                <!--android:theme="@style/Spinner"-->
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/light_sky_blue" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.sundar.shopping.custom_classes.CustomTextViewBold
+                            android:id="@+id/sizes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/first_price"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:text="@string/colors"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <com.sundar.shopping.custom_classes.CustomTextViewRegular
+                                    android:id="@+id/color_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/sizes_details"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <Spinner
+                                    android:id="@+id/color_spinner"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/color_details" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/light_sky_blue" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/text_composition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_color"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/composition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <com.sundar.shopping.custom_classes.CustomTextViewRegular
+                    android:id="@+id/text_composition_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_composition"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/kurta_georgette"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/text_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_composition_details"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/custome_fitting_available"
+                    android:textColor="@color/higlight_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/available_icon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@+id/text_composition_details"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:src="@drawable/available_icon" />
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/text_ratting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_available"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/rating"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ratinbar_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_ratting"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:ignore="NotSibling,UnknownId" />
+
+                <LinearLayout
+                    android:id="@+id/more_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/ratinbar_recyclerview"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="NotSibling">
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:textColor="@color/higlight_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/blue_next_icon" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/bottom_layout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/more_layout"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:visibility="gone">
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewBold
+                        android:id="@+id/buy_now_two"
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/add_to_cart_two"
+                        android:background="@drawable/new_customise_button"
+                        android:text="@string/buy_now"
+                        android:textAlignment="center"
+                        android:textColor="@color/higlight_color"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewBold
+                        android:id="@+id/add_to_cart_two"
+                        android:layout_width="@dimen/_140sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+
+                        android:background="@drawable/new_customise_button"
+                        android:text="@string/add_to_cart"
+                        android:textAlignment="center"
+                        android:textColor="@color/higlight_color"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <com.sundar.shopping.custom_classes.CustomTextViewBold
+            android:id="@+id/buy_now"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/add_to_cart"
+            android:background="@drawable/new_customise_button"
+            android:text="@string/buy_now"
+            android:textAlignment="center"
+            android:textColor="@color/higlight_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <com.sundar.shopping.custom_classes.CustomTextViewBold
+            android:id="@+id/add_to_cart"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+
+            android:background="@drawable/new_customise_button"
+            android:text="@string/add_to_cart"
+            android:textAlignment="center"
+            android:textColor="@color/higlight_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

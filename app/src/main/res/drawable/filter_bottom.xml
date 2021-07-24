@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape = "oval "
+    xmlns:android = "http://schemas.android.com/apk/res/android" >
+    <gradient
+
+        android:endColor="#DFDFDF"
+        android:gradientRadius="@dimen/_90sdp"
+        android:startColor="#FFFFFF"
+        android:angle = "90"
+        android:type = "linear"/>
+   <!-- <corners android:radius="10dp" />-->
+</shape>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+            <solid android:color="#02C6C4C4" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+            <solid android:color="#05000000" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+            <solid android:color="#10D1CCCC" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+           &lt;!&ndash; <solid android:color="#15000000" />&ndash;&gt;
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+           &lt;!&ndash; <solid android:color="#20000000" />&ndash;&gt;
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    &lt;!&ndash; Background &ndash;&gt;
+    <item>
+        <shape>
+            <solid android:color="#FAFFFFFF" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</layer-list>-->
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    &lt;!&ndash; Bottom 2dp Shadow &ndash;&gt;
+    <item>
+        <shape  android:shape="rectangle">
+
+            <solid android:color="#d8d8d8" />
+            <corners android:radius="7dp" />
+
+        </shape>
+    </item>
+
+    &lt;!&ndash; White Top color &ndash;&gt;
+    <item android:bottom="3px">
+
+        <shape  android:shape="rectangle">
+
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="7dp" />
+
+
+        </shape>
+
+    </item>
+
+
+</layer-list>-->

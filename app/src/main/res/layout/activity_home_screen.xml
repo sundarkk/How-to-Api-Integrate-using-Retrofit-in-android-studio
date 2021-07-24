@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:background="@color/white"
+    tools:context=".activities.HomeScreenActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progress_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/light_sky_blue" />
+
+            <RelativeLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <!--  <com.appcrunk.raimentz.custom_classes.MyTv
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/_15sdp"
+                      android:text="@string/woman_satin"
+
+                      app:fontName="@string/appfontRegular"/>-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_price_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview_categories"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                <com.kingfisher.easyviewindicator.RecyclerViewIndicator
+                    android:id="@+id/first_banner_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/recyclerview_price_off"
+                    android:layout_centerHorizontal="true"
+                    app:avi_animation_enable="true"
+                    app:avi_drawable="@drawable/blue_baseline_horizontal_rule_24"
+                    app:avi_drawable_unselected="@drawable/white_baseline_horizontal_rule_24"
+                    app:avi_height="@dimen/_20sdp"
+                    app:avi_width="@dimen/_20sdp" />
+                <!-- app:avi_margin="10dp"-->
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/arrival_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recyclerview_price_off"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/new_arriwal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/arrival_view_all"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@id/recyclerview_price_off"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/view_all_icon" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/arrival_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrival_text"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrival_recyclerview"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewBold
+                        android:id="@+id/deal_of_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/deals_of_the_day"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewBold
+                        android:id="@+id/text_up_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deal_of_text"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="@string/save_upto_25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/view_all"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/view_all_icon" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_deal_off_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_up_to"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:clipToPadding="false"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="2" />
+
+                    <!-- <androidx.recyclerview.widget.RecyclerView
+                         android:id="@+id/recyclerview_deal_off_day"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/text_up_to"
+                         android:layout_marginStart="@dimen/_8sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:layout_marginEnd="@dimen/_8sdp"
+                         android:nestedScrollingEnabled="false"
+                         android:orientation="horizontal"
+                         android:overScrollMode="never"
+                         android:visibility="visible"
+                         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                         app:spanCount="2"
+                         android:clipToPadding="false"/>-->
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/offer_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_deal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                    android:id="@+id/indicator_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/offer_recyclerview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:spi_dotColor="@color/white"
+                    app:spi_dotSize="@dimen/_8sdp" />
+                <!--app:spi_dotSelectedColor="@color/resend_color"-->
+
+
+                <com.sundar.shopping.custom_classes.CustomTextViewBold
+                    android:id="@+id/item_view_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offer_recyclerview"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:paddingTop="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="@string/items_you_have_viewed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_225sdp"
+                    android:layout_below="@+id/item_view_text"
+                    android:background="@drawable/trasprent_section_last"
+                    android:orientation="horizontal">
+                    <!--   android:background="@drawable/square_black_gradient"-->
+                    <!--<ImageView
+                        android:id="@+id/ImageView_image"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/potimage" />-->
+
+                    <!--<View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/square_black_gradient" />-->
+
+
+                    <com.sundar.shopping.custom_classes.CustomTextViewBold
+                        android:id="@+id/text_view"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:text="@string/recent_view"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_view_recyclerview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="horizontal"
+                        android:overScrollMode="never"
+
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    <!--  android:paddingStart="@dimen/_120sdp"-->
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

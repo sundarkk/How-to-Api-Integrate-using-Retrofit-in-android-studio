@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main_layout"
+    tools:context=".activities.SignUpScreenActivity">
+
+
+    <ImageView
+        android:id="@+id/botto_image_shape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/botto_shape" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_110sdp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/sign_up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@null"
+                android:src="@drawable/backarrow"
+                tools:ignore="RtlCompat" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/sign_up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="@string/appfontRegular" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_fill_flowing_details"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_12sdp"
+                app:fontName="@string/appfontRegular" />
+
+            <FrameLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/blue_silver_circle" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:src="@drawable/fff" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/small_camera" />
+            </FrameLayout>
+
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="@string/appfontBold" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@null"
+                android:hint="@string/enter_your_name"
+                android:inputType="text"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textSize="@dimen/_10sdp"
+                app:fontName="@string/appfontRegular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/email_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="@string/appfontBold" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@null"
+                android:hint="@string/enter_email_address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textSize="@dimen/_10sdp"
+                app:fontName="@string/appfontRegular" />
+
+            <View
+                android:id="@+id/gmail_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+            <RelativeLayout
+                android:id="@+id/password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.sundar.shopping.custom_classes.MyTv
+                    android:id="@+id/text_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="@string/appfontBold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/text_password"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.sundar.shopping.custom_classes.MyTv
+                        android:id="@+id/password"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/enter_your_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/light_black"
+                        android:textColorHint="@color/light_black"
+                        android:textSize="@dimen/_10sdp"
+                        app:fontName="@string/appfontRegular" />
+
+                    <ImageView
+                        android:id="@+id/eye_icon_password"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/eye_icon" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+
+            <RelativeLayout
+                android:id="@+id/conform_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.sundar.shopping.custom_classes.MyTv
+                    android:id="@+id/text_confirm_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/confirm_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="@string/appfontBold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/text_confirm_password"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.sundar.shopping.custom_classes.MyTv
+                        android:id="@+id/confirm_password"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/enter_your_confirm_pawrd"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_black"
+                        android:textSize="@dimen/_10sdp"
+                        app:fontName="@string/appfontRegular" />
+
+                    <ImageView
+                        android:id="@+id/eye_icon_confirm_password"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/eye_icon" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/mobile_number_option"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="@string/appfontBold" />
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:id="@+id/edit_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@null"
+                android:hint="@string/enter_your_mobile_number"
+                android:inputType="number"
+                android:textColor="@color/light_black"
+                android:textColorHint="@color/light_black"
+                android:textSize="@dimen/_10sdp"
+                app:fontName="@string/appfontRegular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="@string/appfontBold" />
+
+
+            <LinearLayout
+                android:id="@+id/date_of_birth_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.sundar.shopping.custom_classes.MyTv
+                    android:id="@+id/date_of_birth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/select_your_date_of_birth"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_black"
+                    android:textSize="@dimen/_10sdp"
+                    app:fontName="@string/appfontRegular" />
+
+                <ImageView
+                    android:id="@+id/eye_icon_new_password"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/calender_icon" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/off_white" />
+
+
+            <com.sundar.shopping.custom_classes.MyTv
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/button_gradient"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/_12sdp"
+                android:textAlignment="center"
+                app:fontName="@string/appfontBold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

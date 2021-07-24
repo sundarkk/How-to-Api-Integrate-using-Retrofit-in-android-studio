@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/section_three_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:background="@color/off_white"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/image_deal_of_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/tops" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/categories_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/dddd"
+        android:tint="@color/blue" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:padding="@dimen/_12sdp">
+
+        <com.sundar.shopping.custom_classes.CustomTextViewMedium
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+        <com.sundar.shopping.custom_classes.CustomTextViewMedium
+            android:id="@+id/off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percentage"
+            android:text="@string/of"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

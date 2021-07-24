@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:background="@color/white"
+    android:clipToPadding="false">
+
+
+    <ImageView
+        android:id="@+id/price_off_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_lehnga" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:includeFontPadding="false"
+            android:background="@drawable/min_offer_shadow"
+            android:lineSpacingExtra="0dp"/>
+
+        <!--<ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/min_background" />
+        -->
+
+
+        <com.sundar.shopping.custom_classes.CustomTextViewBold
+            android:id="@+id/text_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/minimum_60_off"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textStyle="bold" />
+
+        <com.sundar.shopping.custom_classes.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_min"
+            android:layout_centerInParent="true"
+            android:text="@string/explore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

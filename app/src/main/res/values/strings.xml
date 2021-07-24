@@ -1,0 +1,409 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Shopping</string>
+
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="logout">Logout</string>
+    <string name="log_in_your_accont">Log in to your account</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="Enter_your_username_or_email">Enter your username or email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgots_password">Forgot Password</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">or</string>
+    <string name="log_in_via_social_media">LogIn via social media</string>
+    <string name="email_address">Email address</string>
+    <string name="enter_email_address">Enter your email address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="next">Next</string>
+    <string name="please_create_a_new_password">Please create a new password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_your_new_password">Enter your New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_confirm_password">Enter same Password to Confirm</string>
+    <string name="enter_your_confirm_pawrd">Enter your confirm password</string>
+    <string name="please_fill_flowing_details">Please fill flowing Details</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="mobile_number_option">Mobile number (Optional)</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="enter_your_date_of_birth">Enter your date of birth</string>
+    <string name="select_dob">Select date of birth</string>
+
+    <string name="otp_verification">OTP verification</string>
+    <string name="please_enter_your_otp_for_verification">Please enter your otp for verification</string>
+    <string name="the_otp_has_been_sent_to_email">The otp has been sent to "abc@gmail.com"</string>
+    <string name="verify">Verify</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="enter_valid_password">Enter valid email</string>
+    <string name="select_your_date_of_birth">Select your date of birth</string>
+
+    <string name="camera_permission">This action needs to access your device camera</string>
+    <string name="gallery_permission_denied">Gallery Permission Denied</string>
+    <string name="camera_permission_denied">Camera permission denied</string>
+    <string name="gallery_permission">Please allow access to your device gallery</string>
+    <string name="camera">Camera</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="this_image_will_be_your_profile_picture">This image will be your profile picture.</string>
+    <string name="canceled">Canceled</string>
+    <string name="storage_permission_required">Storage permission required</string>
+    <string name="please_give_storage_permission">This will not work without storage permission</string>
+    <string name="give_permission">Give Permission</string>
+    <string name="ignore">Ignore</string>
+    <string name="camera_and_storage_permission_required">Camera and Storage permssion required</string>
+    <string name="please_give_camera_storage_permission">Please give camera and storage permission to access this feature</string>
+    <string name="select_profile_pic">Please select profile pic</string>
+
+    <string name="Please_allow_camera_or_gallery">Please_allow_camera_or_gallery permission in settings</string>
+    <string name="hide">hide</string>
+    <string name="please_select_image">Please select profile image</string>
+    <string name="otp_sent_again">OTP sent again!</string>
+    <string name="enter_contact_name">Enter contact name</string>
+    <string name="enter_contact_number">Enter contact number</string>
+    <string name="enter_contact_email">Enter contact email</string>
+    <string name="enter_name_txt">Enter your name</string>
+    <string name="edit_surname_txt">Surname</string>
+    <string name="email_txt">Email</string>
+    <string name="edit_email_txt">Enter your Email</string>
+    <string name="mobile_no_txt">Mobile Number</string>
+    <string name="edit_mobile_no_txt">Enter your Mobile Number</string>
+    <string name="birth_date_txt">Date of Birth</string>
+    <string name="edit_birth_date_txt">Enter your Date of Birth</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="enter_valid_login_password">Please enter valid password</string>
+
+
+    <string name="mobile_text">Please enter valid mobile number</string>
+    <string name="gallery_setting_permission">Please go to setting in allow gallery permission</string>
+    <string name="camera_setting_permission">Please go to setting in allow camera permission</string>
+    <string name="ok">Ok</string>
+    <string name="allow">Allow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guest_user">Guest user</string>
+    <string name="abc_gmail_com">abc@gmail.com"</string>
+    <string name="notification">Notification</string>
+    <string name="view_profile">View Profile</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="setting">Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="please_wait">Please wait!</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="almost_done">Almost Done</string>
+    <string name="all">All</string>
+    <string name="minimum_60_off">Min. 60% off</string>
+    <string name="explore">+Explore</string>
+    <string name="new_arriwal">New Arrivals</string>
+    <string name="up_to_45_off">Up to 45% off</string>
+    <string name="on_dresses">On Dresses</string>
+    <string name="deals_of_the_day">Deals of the day</string>
+    <string name="save_upto_25">Save upto 25%</string>
+    <string name="view_all">View All</string>
+    <string name="off">25%</string>
+    <string name="of">Off</string>
+    <string name="items_you_have_viewed">Items you have viewed</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="cart">Cart</string>
+
+    <string name="profile">Profile</string>
+    <string name="men">Men</string>
+    <string name="t_shirt">T-Shirts, Jeans, Shoes Footwear...</string>
+    <string name="my_cart">My cart</string>
+    <string name="check_items_you_have_picked">Check items you have picked</string>
+
+    <string name="womens_satin_semi_stiched" tools:ignore="StringEscaping">women satin "&amp;" Semi Stiched  Salwar Suit (LNF356_Green)</string>
+
+    <string name="quantity">Quantity</string>
+
+    <string name="exat_amount">$1,335</string>
+    <string name="off_amount">$1,900</string>
+    <string name="offer">55% OFF</string>
+    <string name="size">Size</string>
+    <string name="sizes">Size: </string>
+    <string name="sizes_details">(M) Chest:36"-38..</string>
+    <string name="color_name">Black</string>
+
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+
+    <string name="my_profile">My profile</string>
+    <string name="change_profile_details_password">Change your profile details &amp; password</string>
+    <string name="other">Other</string>
+    <string name="check_your_orders_status">Check your orders status</string>
+    <string name="help_centre">Help center</string>
+    <string name="help_regarding_your_recent_purchases">Help regarding your recent purchases</string>
+    <string name="your_most_loved_styles">Your most loved styles</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="invite_friends_and_earn_rewards">Invite friends and earn rewards</string>
+    <string name="address">Address</string>
+    <string name="manage_address">Manage Address</string>
+    <string name="save_address_for_a_hassle_free_checkout">Save address for a hassle-free checkout</string>
+    <string name="manage_notification_and_app_setting">Manage notification &amp; app settings</string>
+    <string name="abcgmail.com">abc@gmail.com</string>
+    <string name="your_account_details">Your account details</string>
+    <string name="check_your_internet_connection">Please check your internet connection!</string>
+    <string name="enter_valid_otp">Enter valide otp</string>
+
+    <string name="confirm_password_is_not_correct">Confirm password is not correct</string>
+    <string name="google_login_succesfull">Google login succesfull</string>
+    <string name="google_loginout_succesfull">Google logout succesfull</string>
+
+    <string name="facebook_login_succesfull">Facebook login succesfull</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_want_logout">Do you want to logout?</string>
+    <string name="wait_while_loading">Please wait while we load your content…</string>
+    <string name="welcome_back">"Welcome back, "</string>
+    <string name="press_again">Press again to exit</string>
+    <string name="sara_suit">Sara suit</string>
+    <string name="sara_suit_for_girl">Sara suit for girl</string>
+    <string name="rent_designer_sharara">Rent Designer Sharara</string>
+    <string name="dark_green_embroided_sharara">Dark green embroided sharara</string>
+    <string name="sharara_impress_pitara">Sharara impress pitara</string>
+    <string name="colors">Colors:</string>
+    <string name="color">Colors</string>
+    <string name="dark_green">Dark green</string>
+    <string name="composition">Composition</string>
+    <string name="kurta_georgette">Kurta: Georgette, Sharara: Georgette, Duppata: Net</string>
+    <string name="custome_fitting_available">Custom Fitting Available</string>
+    <string name="rating">Rating &amp; Reviews</string>
+    <string name="view_product_review_rating">View Product\'s Reviews and Ratings</string>
+    <string name="saara">Saara</string>
+    <string name="sharara">Sharara</string>
+    <string name="saara_descprition">Sara Clothes takes pride in creating the gold standard for unstitched Pakistani dresses.... </string>
+
+    <string name="buy_now">Buy Now</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="spinnersizeitems">size_items</string>
+    <string name="please_select_size">Select your size</string>
+    <string name="more">More</string>
+    <string name="number">4.3</string>
+    <string name="verified_buyer">94 Verified Buyers</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="thirtysix">36</string>
+    <string name="twenty">14</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="customer_photos">Customer Photos</string>
+    <string name="customer_rewiews">Customer Reviews</string>
+    <string name="filter">Filters</string>
+    <string name="apply_filter_for_easy_sorting">Apply filters for easy sorting</string>
+    <string name="clear_filter">Clear Filters</string>
+    <string name="location">Location</string>
+    <string name="brand">Brand</string>
+    <string name="price">Price</string>
+    <string name="discount">Discount</string>
+    <string name="ratings">Rating</string>
+    <string name="black">Blue</string>
+    <string name="green">Red</string>
+    <string name="yello">yello</string>
+    <string name="orange">Orange</string>
+    <string name="sky_blue">Sky blue</string>
+    <string name="Light_blue">Light blue</string>
+    <string name="silver">silver</string>
+    <string name="black_dar">Black dark</string>
+    <string name="blue">Blue</string>
+    <string name="light_green">light green</string>
+    <string name="red">Red</string>
+    <string name="purple">Purple</string>
+
+
+    <string name="top_picks">Top Picks</string>
+    <string name="close">Close</string>
+    <string name="apply">Apply</string>
+    <string name="add_new_address">Add new address</string>
+    <string name="adr_mobile">Mobile<p><font color="red">*</font></p></string>
+
+    <string name="adr_name">Name<p><font color="red">*</font></p></string>
+    <string name="adr_pin">Pincode<p><font color="red">*</font></p></string>
+    <string name="adr_state">State<p><font color="red">*</font></p></string>
+    <string name="adr_adr_details">Address(House No, Building, Street, Area )<p><font color="red">*</font></p></string>
+    <string name="adr_lacality">Locality/Town<p><font color="red">*</font></p></string>
+    <string name="adr_dist">City/ District<p><font color="red">*</font></p></string>
+    <string name="type_of_address">Type of Address<p><font color="red">*</font></p></string>
+
+    <string name="office">Office</string>
+    <string name="save">Save</string>
+    <string name="check_confirm_details">Check and Confirm Details</string>
+    <string name="soya">Hayaana</string>
+    <string name="complete_address">Sohana, Sahibzada Ajit Singh Nagar, Mobile No : xxxxxxxx35 near Homeland airport road Punjab 140308</string>
+    <string name="delivery_to_this_location">Deliver to this Location</string>
+    <string name="continues">CONTINUE</string>
+    <string name="proceed">Proceed</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="all_amount">$4,400</string>
+    <string name="payment">Payment</string>
+    <string name="payment_option_available">Payment Options Available</string>
+    <string name="payment_option">Payment Options</string>
+    <string name="debit_card">Credit/ Debit card</string>
+    <string name="card_number">Card Number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="valid_card_date">Valid Thru (MM/YYYY)</string>
+    <string name="cvv">CVV</string>
+    <string name="save_this_card_for_faster_payment">Save this card for faster payment</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="upi_qr">UPI / QR</string>
+    <string name="price_details">Price details (3items)</string>
+    <string name="total_mrp">Total MRP</string>
+    <string name="discount_mrp">Discount on MRP</string>
+    <string name="tp">$56.00</string>
+    <string name="eighteen">$80</string>
+    <string name="dmp">-$56.00</string>
+    <string name="paynow">Pay Now</string>
+    <string name="recent_view">Recently\nViewed</string>
+    <string name="wishlists">Wishlist (32 items)</string>
+    <string name="list_of_itens_saved_in_your_gallery">List of items saved in your Gallery</string>
+    <string name="move_to_cart">Move to Cart</string>
+    <string name="check_and_confirm_details">Check and Confirm Details</string>
+    <string name="mute_notification">Mute Notification</string>
+    <string name="remove_account">Remove Account</string>
+    <string name="change_password">Change Password</string>
+    <string name="notifications">Notifications</string>
+    <string name="order_delivery_succesfully">Order Delivery Succesfully</string>
+    <string name="trendiest_sweartshirt_from_knk_shop_now">Trendiest Sweartshirt from KNK! Shop now!</string>
+    <string name="order_no">Order No: 1072494-1510899</string>
+    <string name="please_describe_your_problem">Please Describe your Problem</string>
+    <string name="enter_your_problem">Enter your Problem</string>
+    <string name="about_and_help">About and Help</string>
+    <string name="add_screenshort_optional">Add Screenshorts (Optional): </string>
+    <string name="no_more_data">No data found </string>
+    <string name="order_no_digit">order no </string>
+    <string name="order_no_with_digit">1072494-1510899 </string>
+    <string name="order_status">Order Status</string>
+
+
+    <string name="facebook_app_id">546151650125371</string>
+    <string name="fb_login_protocol_scheme">fb546151650125371</string>
+
+    <string name="place_order">PLACE ORDER</string>
+    <string name="orders">Orders</string>
+
+    <string name="pincode">Please enter valid pin number</string>
+    <string name="state">Please enter valid state name</string>
+    <string name="full_addres">Please enter full address</string>
+    <string name="locality">Please enter locality</string>
+    <string name="city">Please enter city</string>
+    <string name="select_address_type">Please select delivery address</string>
+
+    <string name="you_selected_home">You selected Home address</string>
+    <string name="mobile">Mobile:</string>
+    <string name="mobile_digit">xxxxx6070</string>
+    <string name="pin">1400130</string>
+    <string name="please_select_type_of_address">Please select type of address</string>
+    <string name="address_save_succesfully">Address save succesfully</string>
+
+    <string name="woman_suite">woman\' Satin and semi stiched </string>
+    <string name="dark_blue">Dark blue</string>
+    <string name="small">(S)</string>
+
+    <string name="chandigarh">Chandigarh</string>
+    <string name="mohali">Mohali</string>
+    <string name="jalandhar">Jalandhar</string>
+    <string name="delhi">Delhi</string>
+    <string name="banglore">Banglore</string>
+    <string name="amritsar">Amritsar</string>
+    <string name="mandi">Mandi</string>
+    <string name="himachal">Himachal</string>
+    <string name="mm">M</string>
+    <string name="s">S (28 to 30)</string>
+    <string name="m">M (30 to 35)</string>
+    <string name="l">L (35 to 40)</string>
+    <string name="x">xL (40 to 45)</string>
+    <string name="xx">XXL (45 to 50_</string>
+    <!-- <string name="xxl">50 to 55</string>
+    <string name="xl">55 to 60</string>-->
+
+    <string name="addidas">Addidas</string>
+    <string name="levis">Levis</string>
+    <string name="hm">H&amp;M</string>
+    <string name="tommy_hilfigure">Tommy Hilfigure</string>
+    <string name="zara">Zara</string>
+    <string name="veromoda">Veromoda</string>
+    <string name="puma">Puma</string>
+    <string name="forever_21">Forever 21</string>
+
+
+    <string name="one_d">$10.00-$50.00</string>
+    <string name="two_d">$50.00-$100.00</string>
+    <string name="three_d">$100.00-$200.00</string>
+    <string name="four_">$200.00-$500.00</string>
+    <string name="five_d">$26.10-$28.50</string>
+    <string name="six_d"> > $500.00</string>
+
+
+    <string name="d_one">Up to $10.00%</string>
+    <string name="d_two">Up to $20.00%</string>
+    <string name="d_three">Up to $30.00%</string>
+    <string name="d_four">Up to $40.00%</string>
+    <string name="d_five">Up to $50.00%</string>
+
+    <string name="received">Received</string>
+    <string name="delivered">Delivered</string>
+    <string name="accepted">Accepted</string>
+    <string name="shipped">Shipped</string>
+    <string name="woman_satin">Woman\'s Satin</string>
+    <string name="start_conversation">Start conversation!</string>
+    <string name="expired">Expired</string>
+    <string name="enter_message">Enter message</string>
+    <string name="share">Share</string>
+    <string name="image">Image</string>
+    <string name="contact">Contact</string>
+
+
+    <string name="select_quantity">Please selsect quantity</string>
+    <string name="select_size">Please selsect size</string>
+    <string name="select_color">Please selsect color</string>
+
+    <string name="wishlist_add_to_cart_save_succesfully">Wishlist item add to cart succesfully</string>
+    <string name="item_added_to_cart">Item added to cart</string>
+    <string name="item_already_added_in_the_cart">Item already added in the cart</string>
+    <string name="are_you_sure_you_want_to_remove_this_item">Are you sure you want to remove this item.</string>
+    <string name="go_to_cart">Go to cart</string>
+
+    <string name="appfontRegular">Comfortaa-Regular.ttf</string>
+    <string name="appfontMedium">Comfortaa-Light.ttf</string>
+    <string name="appfontBold">Comfortaa-Bold.ttf</string>
+
+
+    <!-- <string-array name="spinnersizeitems">
+         <item>(L) Chest:40"-42</item>
+         <item>(M) Chest:36"-40</item>
+         <item>(S) Chest:32"-36</item>
+     </string-array> -->
+
+    <string-array name="spinnersizeitems">
+        <item>S</item>
+        <item>M</item>
+        <item>x</item>
+        <item>xx</item>
+        <item>xx</item>
+        <item>xxl</item>
+    </string-array>
+
+    <string-array name="color_items">
+        <item>Dark blue</item>
+        <item>Light blue</item>
+        <item>Dark black</item>
+        <item>Dark green</item>
+    </string-array>
+
+</resources>
